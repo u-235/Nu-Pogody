@@ -19,3 +19,16 @@ dependencies {
 
 version = '0.9.0'
 mainClassName = 'Main'
+
+distributions {
+    main {
+        contents {
+            from 'LICENSE'
+            from 'README.md'
+            from ('files/screen-shot.png') {
+                into "files"
+            }
+        }
+    }
+}
+
